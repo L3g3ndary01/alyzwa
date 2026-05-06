@@ -192,6 +192,69 @@ body {
     color: var(--dark-grey);
 }
 
+
+/* Order Platforms Styles */
+.order-section {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.order-section h2 {
+    font-size: 2.2rem;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.order-section p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.platform-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.platform-card {
+    background: var(--light-grey);
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-dark);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.platform-card img {
+    height: 40px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.platform-card span {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Mobile adjustments for platform cards */
+@media (max-width: 768px) {
+    .platform-card {
+        width: 100%; /* Stack them on mobile for easier tapping */
+        max-width: 300px;
+    }
+}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .nav-links {
